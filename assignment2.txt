@@ -1,0 +1,56 @@
+Key Points: Software Development Lifecycle (SDLC)
+
+Definition: SDLC outlines the stages of software development from concept to delivery, ensuring consistency, efficiency, and user satisfaction.
+
+
+Phases:
+1) Planning: Define goals, objectives, and user requirements; create a project plan.
+2) Analysis: Analyze user requirements, check feasibility, and determine resources.
+3) Design: Create detailed plans for UI, architecture, and components.
+4) Implementation: Write, test, and debug code to develop software.
+5) Testing: Conduct various tests (unit, integration, user acceptance) to ensure quality.
+6) Deployment: Deliver software to users; ensure smooth installation or setup.
+7) Maintenance: Fix bugs, update features, and ensure software longevity.
+
+
+Roles in Software Development:
+
+1) Software Developer/Engineer: Codes, tests, and maintains software.
+2) Front-End Developer: Focuses on user interface (UI) and user experience (UX).
+3) Back-End Developer: Manages server-side logic, databases, and APIs.
+4) Full-Stack Developer: Handles both front-end and back-end development.
+5) DevOps Engineer: Automates deployment, optimizes CI/CD pipelines.
+6) QA Engineer: Ensures software quality via manual and automated testing.
+7) Software Architect: Designs high-level architecture and system frameworks.
+8) Project Manager: Oversees timelines, budgets, and team coordination.
+9) UX/UI Designer: Creates user-friendly and visually appealing designs.
+10) Business Analyst: Bridges stakeholder requirements with technical teams.
+11) Security Engineer: Secures software against vulnerabilities.
+
+
+Frontend vs. Backend Development
+
+
+Frontend (Client-Side):
+Focus: Visuals and user interactions.
+Tools: HTML, CSS, JavaScript, frameworks like React and Angular.
+Tasks: UI design, responsive layouts, performance optimization.
+
+
+Backend (Server-Side):
+Focus: Data processing and application logic.
+Tools: Python, Java, Node.js, databases (SQL/NoSQL), and APIs.
+Tasks: Authentication, database management, and server functionality.
+
+
+Full-Stack Development
+Definition: Combines front-end and back-end development.
+Scope:
+Front-End: UI design, responsiveness, and interactivity.
+Back-End: Server logic, database management, and API integration.
+Tools: Git, cloud platforms, Docker, Kubernetes.
+
+
+Conclusion
+Frontend focuses on user experience and design; backend handles data and server logic.
+SDLC ensures structured development, while collaboration between roles ensures project success.

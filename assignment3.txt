@@ -1,0 +1,81 @@
+1. Pseudocode for Finding the Maximum of Three Numbers
+
+
+START
+
+INPUT Num1, Num2, Num3
+
+IF Num1 >= Num2 AND Num1 >= Num3 THEN
+    Max = Num1
+ELSE IF Num2 >= Num1 AND Num2 >= Num3 THEN
+    Max = Num2
+ELSE
+    Max = Num3
+END IF
+
+PRINT "The maximum number is: ", Max
+
+END
+
+
+2. Compare and Contrast Two Programming Languages:
+
+
+Python:
+Strengths: Easy to learn, versatile, extensive libraries.
+Weaknesses: Slower performance, dynamic typing issues.
+
+Java:
+Strengths: Faster performance, strong typing, portability.
+Weaknesses: Verbose syntax, steeper learning curve.
+
+
+3. Compilation vs Interpretation:
+
+Compilation:
+* Converts the entire code to machine code before execution.
+* Faster execution, early error detection.
+
+Interpretation:
+* Translates and executes code line-by-line at runtime.
+* Easier debugging, slower execution.
+
+
+4. Flowchart for Calculating Factorial.
+
+
+1) Start
+
+2) Input number (n)
+
+3) Initialize result = 1
+
+4) Set i = 1
+
+5) Loop (i <= n):
+
+6) Multiply result by i
+
+7) Increment i by 1
+
+8) End Loop
+
+9) Print result
+
+End
+
+
+
+5. Function to Calculate the Area of a Rectangle (in Python)
+
+
+def area(length, width):
+    area = length * width
+    return area
+
+
+length = float(input("Enter the length of the rectangle: "))
+width = float(input("Enter the width of the rectangle: "))
+
+result = area(length, width)
+print(f"The area of the rectangle is: {result}")
