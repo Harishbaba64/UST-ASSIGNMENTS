@@ -1,40 +1,42 @@
-items = {
-    'Bread': 40,
-    'Cookies': 80,
-    'Butter': 120,
-    'Cheese': 180,
-    'Yoghurt': 60
-}
+items = [
+    ['Bread', 40],
+    ['Cookies', 80],
+    ['Butter', 120],
+    ['Cheese', 180],
+    ['Yoghurt', 60]
+]
+
 
 cart = []
 
 def view_items():
     print("Available Items:")
-    for name, price in items.items():
-        print(f"Name: {name}, Price: {price}")
+    for item in items:
+        print(f"Name: {item[0]}, Price: {item[1]}")
 
 def add_to_cart():
     item_name = input("Enter the item name: ")
-    if item_name in items:
-        quantity = int(input("Enter the quantity: "))
-        for i in range(len(cart)):
-            if cart[i][0] == item_name:
-                cart[i][1] += quantity
-                cart[i][3] = cart[i][1] * cart[i][2]
-                print(f"Updated {item_name} quantity to {cart[i][1]}")
-                return
-        cart.append([item_name, quantity, items[item_name], quantity * items[item_name]])
-        print(f"Added {item_name} to the cart.")
-    else:
-        print("Item not found!")
+    for item in items:
+        if item[0] == item_name:
+            quantity = int(input("Enter the quantity: "))
+            for cart_item in cart:
+                if cart_item[0] == item_name:
+                    cart_item[1] += quantity
+                    cart_item[3] = cart_item[1] * cart_item[2]
+                    print(f"Updated {item_name} quantity to {cart_item[1]}")
+                    return
+            cart.append([item_name, quantity, item[1], quantity * item[1]])
+            print(f"Added {item_name} to the cart.")
+            return
+    print("Item not found!")
 
 def update_cart():
     item_name = input("Which item to be updated: ")
-    for i in range(len(cart)):
-        if cart[i][0] == item_name:
+    for cart_item in cart:
+        if cart_item[0] == item_name:
             quantity = int(input("Enter the quantity to be updated: "))
-            cart[i][1] = quantity
-            cart[i][3] = cart[i][1] * cart[i][2]
+            cart_item[1] = quantity
+            cart_item[3] = cart_item[1] * cart_item[2]
             print(f"Updated {item_name} quantity to {quantity}")
             return
     print("Item not found in the cart!")
@@ -52,10 +54,11 @@ def print_bill():
     print("\nCart Summary:")
     print("Name, Quantity, Price, Total")
     total_amount = 0
-    for item in cart:
-        print(f"{item[0]}, {item[1]}, {item[2]}, {item[3]}")
-        total_amount += item[3]
+    for cart_item in cart:
+        print(f"{cart_item[0]}, {cart_item[1]}, {cart_item[2]}, {cart_item[3]}")
+        total_amount += cart_item[3]
     print(f"Total Amount of Bill: {total_amount}")
+
 
 while True:
     print("\nWhat do you want to do?")
