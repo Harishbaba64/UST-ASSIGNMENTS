@@ -22,7 +22,7 @@ Obj1.Gun()
 Obj2.Gun()
 
 
-p
+
 ### 2. BookStore Class
 class BookStore:
     NoOfBooks = 0
@@ -177,4 +177,4 @@ print("Addition:", num.Addition())
 print("Subtraction:", num.Subtraction())
 print("Multiplication:", num.Multiplication())
 print("Division:", num.Division())
-```
+
